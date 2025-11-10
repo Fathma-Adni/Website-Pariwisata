@@ -124,9 +124,9 @@ main{
 }       
 .berita{
     display: inline-block;
-    width: 400px;
+    width: 600px;
     margin-right: 20px;
-    min-height: 750px;
+    min-height: 650px;
     vertical-align: top;
     white-space: normal;
     background: white;
