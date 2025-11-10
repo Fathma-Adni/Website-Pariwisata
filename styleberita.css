@@ -18,8 +18,6 @@ header{
     display: flex;
     padding: 20px;
     text-align: center;
-    position: relative;
-    z-index: 1000;
 }
 header img{
     width: 250px;
@@ -32,8 +30,6 @@ nav{
     margin-left: auto;
     justify-content: center;
     align-content: center;
-    position: relative;
-    z-index: 1000;
 }
 nav ul{
     margin: 0;
@@ -63,7 +59,6 @@ nav ul li a:hover{
     display: none;
     position: absolute;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1001;
 }
 .dropdown-wilayah li{
     display: block;
@@ -90,7 +85,6 @@ li:hover .dropdown-wilayah{
     display: none;
     position: absolute;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1001;
 }
 .dropdown-viral li{
     display: block;
@@ -112,163 +106,60 @@ li:hover .dropdown-viral{
 }
 /*-----------------------------------------------------MAIN-----------------------------------------------------*/
 main{
+    margin-top: 0px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
-/*----------------------------------------------------SECTION---------------------------------------------------*/
-section {
-    padding: 60px 20px;
-}
-.section {
-    text-align: center;
-    margin-bottom: 50px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.section h2 {
-    font-size: 45pt;
-    color: maroon;
-    margin-bottom: 15px;
-}
-.section p {
-    font-size: large;
-    color: gray;
-    line-height: 1.6;
-}
-/*-------------------------------------------------CATEGORIES SECTION-------------------------------------------*/
-.categories-section {
+/*----------------------------------------------------SECTION----------------------------------------------------*/
+.berita-container{
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px 0;
+    margin: 20px 0;
+    scrollbar-width: thin;
+    scrollbar-color: gold #f0f0f0;
+}       
+.berita{
+    display: inline-block;
+    width: 400px;
+    margin-right: 20px;
+    min-height: 750px;
+    vertical-align: top;
+    white-space: normal;
     background: white;
-}
-.categories {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 25px;
-    max-width: 1200px;
-    margin: 0 auto;
-    justify-content: center;
-}
-.category-culinary {
-    background: maroon;
-    padding: 30px 20px;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-    border: 2px solid gold;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
-    flex: 1 1 250px;
-    max-width: 250px;
 }
-.category-culinary:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+.berita:hover{
+    transform: translateY(-5px);
 }
-.category-icon {
-    font-size: 35pt;
-    margin-bottom: 15px;
-}
-.category-culinary h3 {
-    color: gold;
-    margin-bottom: 10px;
-    font-size: large;
-}
-.category-culinary p {
-    color: white;
-    line-height: 1.5;
-}
-/*-------------------------------------------------CULINARY SECTION-----------------------------------------------*/
-.culinary-section {
-    background: white;
-}
-.culinary-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-    justify-content: center;
-}
-.culinary-food {
-    background: maroon;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 2px solid gold;
-    flex: 1 1 350px;
-    max-width: 350px;
-    position: relative;
-}
-.culinary-food:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-}
-.culinary-image {
-    height: 200px;
-    overflow: hidden;
-    position: relative;
-}
-.culinary-image img {
+.berita img{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
+    height: 400px;
+    object-fit: fill;
 }
-.viral-badge {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background: gold;
-    color: maroon;
-    padding: 5px 12px;
-    border-radius: 20px;
-    font-weight: bold;
-    font-size: medium;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-.culinary-content {
-    padding: 20px;
-}
-.culinary-content h3 {
-    color: gold;
-    margin-bottom: 10px;
-    font-size: large;
-}
-.culinary-content p {
+.berita h3{
+    padding: 15px;
+    margin: 0;
+    background-image: linear-gradient(to right, #C32146, #A8142A, #9B0D1C, #8D070E, maroon);
     color: white;
-    margin-bottom: 15px;
-    line-height: 1.5;
+    font-size: 18px;
 }
-.culinary-note {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid gold;
+.berita p{
+    padding: 15px;
+    margin: 0;
+    color: #333;
+    text-align: justify;
 }
-.location {
-    color: gold;
-    font-weight: bold;
-    font-size: medium;
-}
-.rating {
-    color: maroon;
-    font-weight: bold;
-    background: gold;
-    padding: 3px 8px;
-    border-radius: 10px;
-}
-.hashtags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-}
-.hashtags span {
-    background: white;
-    color: black;
-    padding: 3px 8px;
-    border-radius: 10px;
-    font-size: medium;
+.berita strong{
+    margin-top: 10px;
+    margin-left: 15px;
+    text-align: left;
 }
 /*----------------------------------------------------FOOTER----------------------------------------------------*/
 footer {
@@ -276,7 +167,6 @@ footer {
     color: white;
     padding: 40px 20px 20px;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 100px;
 }
 .footer-container {
     display: flex;
