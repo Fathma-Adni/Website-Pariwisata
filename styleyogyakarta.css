@@ -1,0 +1,350 @@
+/*-----------------------------------------------------BODY-----------------------------------------------------*/
+body{
+    color: black;
+    background-color: white;
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+/*----------------------------------------------------HEADER----------------------------------------------------*/
+header{
+    color:white;
+    background-image: linear-gradient(to right, #FFFFB7, #FFF192, #FFEA61, #FFDD3C, #FFD400);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    margin: 0;
+    margin-left: auto;
+    display: flex;
+    padding: 20px;
+    text-align: center;
+}
+header img{
+    width: 250px;
+}
+/*----------------------------------------------------NAVBAR----------------------------------------------------*/
+nav{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    margin-left: auto;
+    justify-content: center;
+    align-content: center;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: right;
+}
+nav ul li{
+    position: relative;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 20px;
+    display: block;
+}
+nav ul li a:hover{
+    background-color: maroon;
+    border-radius: 15px;
+}
+/*------------------------------------------------NAVBAR WILAYAH------------------------------------------------*/
+.dropdown-wilayah{
+    background-color: white;
+    min-width: 150px;
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-wilayah li{
+    display: block;
+}
+.dropdown-wilayah li a{
+    color: #333;
+    text-decoration: none;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid #ebebeb;
+}
+.dropdown-wilayah li a:hover{
+    color: black;
+    background-color: #ebebeb;
+}
+li:hover .dropdown-wilayah{
+    display: block;
+}
+/*-------------------------------------------------NAVBAR VIRAL-------------------------------------------------*/
+.dropdown-viral{
+    background-color: white;
+    min-width: 150px;
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-viral li{
+    display: block;
+}
+.dropdown-viral li a{
+    color: #333;
+    text-decoration: none;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid #ebebeb;
+}
+.dropdown-viral li a:hover{
+    color: black;
+    background-color: #ebebeb;
+}
+li:hover .dropdown-viral{
+    display: block;
+}
+/*-----------------------------------------------------MAIN-----------------------------------------------------*/
+main{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*----------------------------------------------------SECTION---------------------------------------------------*/
+section {
+    padding: 60px 20px;
+}
+.section {
+    text-align: center;
+    margin-bottom: 50px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.section h2 {
+    font-size: 45pt;
+    color: maroon;
+    margin-bottom: 15px;
+}
+.section p {
+    font-size: large;
+    color: gray;
+    line-height: 1.6;
+}
+/*-------------------------------------------------DESTINATION SECTION------------------------------------------*/
+.destination-section {
+    background: white;
+}
+.destination {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    min-height: 460px;
+    margin: 0 auto;
+}
+.destination-place {
+    background-image: linear-gradient(to right, #C32146, #A8142A, #9B0D1C, #8D070E, maroon);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid gold;
+}
+.destination-place:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+.destination-place img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.content {
+    padding: 20px;
+}
+.content h3 {
+    color: gold;
+    margin-bottom: 10px;
+    font-size: large;
+}
+.content p {
+    color: white;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+.content h4 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: medium;
+    font-weight: bold;
+}
+/*-------------------------------------------------ACTIVITY SECTION--------------------------------------------*/
+.activity-section {
+    background: white;
+}
+.activity {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.activity-thing {
+    background-image: linear-gradient(to right, #C32146, #A8142A, #9B0D1C, #8D070E, maroon);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    border: 2px solid gold;
+    transition: transform 0.3s ease;
+}
+.activity-thing:hover {
+    transform: translateY(-5px);
+}
+.activity-icon {
+    font-size: 35pt;
+    margin-bottom: 20px;
+}
+.activity-thing h3 {
+    color: gold;
+    margin-bottom: 15px;
+    font-size: large;
+}
+.activity-thing p {
+    color: white;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+.activity-thing ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+.activity-thing li {
+    padding: 5px 0;
+    color: white;
+    border-bottom: 1px solid gold;
+}
+/*-------------------------------------------------CULINARY SECTION--------------------------------------------*/
+.culinary-section {
+    background: white;
+}
+.culinary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    min-height: 460px;
+    margin: 0 auto;
+}
+.culinary-food {
+    background-image: linear-gradient(to right, #C32146, #A8142A, #9B0D1C, #8D070E, maroon);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid gold;
+    margin-bottom: 180px;
+}
+.culinary-food:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+.culinary-food img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.culinary-content{
+    padding: 20px;
+}
+.culinary h3 {
+    color: gold;
+    margin-bottom: 10px;
+    font-size: large;
+}
+.culinary p {
+    color: white;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+.culinary h4 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: medium;
+    font-weight: bold;
+}
+/*----------------------------------------------------FOOTER----------------------------------------------------*/
+footer {
+    background-image: linear-gradient(to right, #C32146, #A8142A, #9B0D1C, #8D070E, maroon);
+    color: white;
+    padding: 40px 20px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 100px;
+}
+.footer-section {
+    flex: auto;
+    min-width: 250px;
+}
+.footer-section h3 {
+    color: gold;
+    margin-bottom: 20px;
+    font-size: large;
+    border-bottom: 2px solid gold;
+    padding-bottom: 10px;
+}
+.hubungi p {
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+.jadwal {
+    list-style: none;
+    padding: 0;
+}
+.kontak {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+}
+.kontak input {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: medium;
+    background-color: white;
+}
+.kontak textarea {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: medium;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.kontak button {
+    padding: 12px 15px;
+    background-color: gold;
+    color: maroon;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid gold;
+}
+.footer-bottom p {
+    margin: 5px 0;
+    font-size: small;
+    opacity: 0.8;
+}

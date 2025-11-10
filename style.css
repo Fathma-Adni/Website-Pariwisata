@@ -1,0 +1,499 @@
+/*-----------------------------------------------------BODY-----------------------------------------------------*/
+body{
+    color: black;
+    background-color: white;
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+/*----------------------------------------------------HEADER----------------------------------------------------*/
+header{
+    color:white;
+    background-image: linear-gradient(to right, #FFFFB7, #FFF192, #FFEA61, #FFDD3C, #FFD400);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    margin: 0;
+    margin-left: auto;
+    display: flex;
+    padding: 20px;
+    text-align: center;
+}
+header img{
+    width: 250px;
+}
+/*----------------------------------------------------NAVBAR----------------------------------------------------*/
+nav{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    margin-left: auto;
+    justify-content: center;
+    align-content: center;
+    z-index: 1001;
+    position: relative;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: right;
+}
+nav ul li{
+    position: relative;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 20px;
+    display: block;
+}
+nav ul li a:hover{
+    background-color: maroon;
+    border-radius: 15px;
+}
+/*------------------------------------------------NAVBAR WILAYAH------------------------------------------------*/
+.dropdown-wilayah{
+    background-color: white;
+    min-width: 150px;
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1001;
+}
+.dropdown-wilayah li{
+    display: block;
+}
+.dropdown-wilayah li a{
+    color: #333;
+    text-decoration: none;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid #ebebeb;
+}
+.dropdown-wilayah li a:hover{
+    color: black;
+    background-color: #ebebeb;
+}
+li:hover .dropdown-wilayah{
+    display: block;
+}
+/*-------------------------------------------------NAVBAR VIRAL-------------------------------------------------*/
+.dropdown-viral{
+    background-color: white;
+    min-width: 150px;
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1001;
+}
+.dropdown-viral li{
+    display: block;
+}
+.dropdown-viral li a{
+    color: #333;
+    text-decoration: none;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid #ebebeb;
+}
+.dropdown-viral li a:hover{
+    color: black;
+    background-color: #ebebeb;
+}
+li:hover .dropdown-viral{
+    display: block;
+}
+/*----------------------------------------------------BANNER----------------------------------------------------*/
+.banner {
+    position: relative;
+    max-width: 1360px;
+    height: 600px;
+    position: relative;
+    z-index: 1;
+}
+.banner .video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.banner video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    object-fit: cover;
+}
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: maroon;
+    opacity: 0.4;
+}
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+.banner-content h4 {
+    color: gold;
+    font-size: 40pt;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+    line-height: 1.2;
+    animation: fadeInDown 1.5s ease-out;
+}
+.banner-subtitle {
+    font-size: 20pt;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    opacity: 0.9;
+    line-height: 1.4;
+    animation: fadeInUp 1.5s ease-out 0.3s both;
+}
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/*-----------------------------------------------------MAIN-----------------------------------------------------*/
+main{
+    padding: 20px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main h2{
+    color: black;
+    background-image: linear-gradient(to left, #FFFFB7, #FFF192, #FFEA61, #FFDD3C, #FFD400);
+    line-height: 2;
+    padding: 10px;
+}
+main p{
+    text-align: justify;
+}
+/*---------------------------------------------------SECTION---------------------------------------------------*/
+section{
+    margin: 20px;
+    margin-bottom: 50px;
+}
+section article{
+    background-color: rgb(238, 238, 238);
+    color: black;
+    font-size: 12pt;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+/*------------------------------------------------SECTION BERITA------------------------------------------------*/
+.berita-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 20px 0px;
+    margin-top: 40px;
+}
+.berita{
+    flex: 4px;
+    min-width: 300px;
+    background-color: rgb(238, 238, 238);
+    color: black;
+    font-size: 12pt;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+    animation: fadeIn 1s ease;
+}
+.berita:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+.berita h3{
+    color: black;
+    margin-bottom: 15px;
+    border-bottom: 2px solid gold;
+    padding-bottom: 10px;
+}
+.berita p{
+    margin-bottom: 10px;
+}
+/*----------------------------------------------SECTION DESTINASI----------------------------------------------*/
+.destinasi-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.destinasi {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+.destinasi img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.destinasi-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(139, 0, 0, 0.75);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.destinasi:hover .destinasi-overlay {
+    opacity: 1;
+}
+.destinasi:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.destinasi-overlay h3 {
+    margin-bottom: 10px;
+    color: gold;
+    font-size: larger;
+}
+.destinasi-overlay p {
+    font-size: medium;
+    line-height: 1.4;
+    text-align: center;
+}
+/*------------------------------------------------SECTION ViDEO------------------------------------------------*/
+.video-container{
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px 0;
+    margin: 20px 0;
+    scrollbar-width: thin;
+    scrollbar-color: gold #f0f0f0;
+}
+.video{
+    display: inline-block;
+    width: 320px;
+    margin-right: 20px;
+    vertical-align: top;
+    white-space: normal;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+.video:hover{
+    transform: translateY(-5px);
+}
+.video iframe {
+    width: 100%;
+    height: 180px;
+    border: none;
+}
+.video h3{
+    padding: 15px;
+    margin: 0;
+    background-image: linear-gradient(to left, #C32146, #A8142A, #9B0D1C, #8D070E, maroon);
+    color: white;
+    font-size: 16px;
+}
+/*------------------------------------------------SECTION GALERI------------------------------------------------*/
+.galeri-section {
+    margin: 40px 20px;
+}
+.gallery-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 30px;
+}
+.gallery-track {
+    display: flex;
+    gap: 20px;
+    animation: scroll 25s linear infinite;
+    padding: 20px 0;
+}
+.gallery-container:hover .gallery-track {
+    animation-play-state: paused;
+}
+.gallery-item {
+    flex-shrink: 0;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.gallery-item:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+.gallery-item.large {
+    width: 400px;
+    height: 500px;
+}
+.gallery-item.medium {
+    width: 300px;
+    height: 400px;
+}
+.gallery-item.small {
+    width: 250px;
+    height: 300px;
+}
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(139, 0, 0, 0.9));
+    color: white;
+    padding: 30px 20px 20px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+.gallery-item:hover .image-overlay {
+    transform: translateY(0);
+}
+.image-overlay h3 {
+    font-size: large;
+    margin-bottom: 8px;
+    color: gold;
+}
+.image-overlay p {
+    font-size: medium;
+    opacity: 0.9;
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-400px - 20px));
+    }
+}
+/*----------------------------------------------------FOOTER----------------------------------------------------*/
+footer {
+    background-image: linear-gradient(to right, #C32146, #A8142A, #9B0D1C, #8D070E, maroon);
+    color: white;
+    padding: 40px 20px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 100px;
+}
+.footer-section {
+    flex: auto;
+    min-width: 250px;
+}
+.footer-section h3 {
+    color: gold;
+    margin-bottom: 20px;
+    font-size: large;
+    border-bottom: 2px solid gold;
+    padding-bottom: 10px;
+}
+.hubungi p {
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+.jadwal {
+    list-style: none;
+    padding: 0;
+}
+.kontak {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+}
+.kontak input {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: medium;
+    background-color: white;
+}
+.kontak textarea {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: medium;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.kontak button {
+    padding: 12px 15px;
+    background-color: gold;
+    color: maroon;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid gold;
+}
+.footer-bottom p {
+    margin: 5px 0;
+    font-size: small;
+    opacity: 0.8;
+}
